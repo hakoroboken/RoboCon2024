@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="ombridge_driver" exec="ombridge_driver_node" name="ombridge_driver_node">
+
+        <remap from="/move1" to="/move1"/>
+        <remap from="/move2" to="/move2"/>
+        <remap from="/bridge1" to="/bridge1"/>
+        <remap from="/bridge2" to="/bridge2"/>
+
+        <param name="path" value="/dev/ttyUSB0"/>
+    </node>
+</launch>

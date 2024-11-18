@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="imu_ekf_posture" exec="imu_ekf_posture_node" name="imu_ekf_posture">
+        <remap from="/imu" to="/camera/camera/imu"/>
+        <remap from="/rpy" to="/imu/posture"/>
+        
+        <param name="enable_position" value="false"/>
+        <param name="frame_id" value="odom"/>
+        <param name="child_frame_id" value="imu"/>
+    </node>
+</launch>

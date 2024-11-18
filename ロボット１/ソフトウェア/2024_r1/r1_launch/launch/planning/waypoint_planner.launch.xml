@@ -1,0 +1,21 @@
+<launch>
+    <node pkg="waypoint_planner" exec="waypoint_planner_node" name="waypoint_planner_node">
+        <remap from="/robot/pose/target" to="/target"/>
+        <remap from="/target_id" to="/target_id"/>
+
+        <param name="home_x" value="1.0"/>
+        <param name="home_y" value="1.0"/>
+
+        <param name="first_x" value="1.0"/>
+        <param name="first_y" value="2.5"/>
+        <param name="first_yaw" value="60"/>
+
+        <param name="second_x" value="1.0"/>
+        <param name="second_y" value="2.5"/>
+        <param name="second_yaw" value="0"/>
+
+        <param name="third_x" value="2.5"/>
+        <param name="third_y" value="1.0"/>
+        <param name="third_yaw" value="0"/>
+    </node>
+</launch>

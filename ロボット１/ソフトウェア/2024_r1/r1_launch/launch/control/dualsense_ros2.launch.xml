@@ -1,0 +1,20 @@
+<launch>
+    <node pkg="joy" exec="joy_node"/>
+
+    <node pkg="dualsense_ros2" exec="dualsense_ros2_node" name="dualsense_ros2_node">
+        <remap from="/joy" to="/joy"/>
+
+        <remap from="/controller/x" to="/out/x"/>
+        <remap from="/controller/y" to="/out/y"/>
+        <remap from="/controller/rotation" to="/out/rotation"/>
+        <remap from="/f1" to="/move1"/>
+        <remap from="/f2" to="/out/machine"/>
+        <remap from="/f3" to="/move2"/>
+        <remap from="/f4" to="/bridge1"/>
+        <remap from="/f5" to="/bridge2"/>
+        <remap from="/f6" to="/cad1"/>
+        <remap from="/f7" to="/cad2"/>
+        <remap from="/f8" to="/cad3"/>
+        <remap from="/f9" to="/cad4"/>
+    </node>
+</launch>

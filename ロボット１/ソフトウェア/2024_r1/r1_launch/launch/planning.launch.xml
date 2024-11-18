@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find-pkg-share r1_launch)/launch/planning/cmd_sim.launch.xml"/>
+    <include file="$(find-pkg-share r1_launch)/launch/planning/field_sim.launch.xml"/>
+
+    <include file="$(find-pkg-share r1_launch)/launch/planning/waypoint_planner.launch.xml"/>
+</launch>

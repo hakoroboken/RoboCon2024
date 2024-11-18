@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="tobasudake" exec="tobasudake_node" name="tobasudake_node">
+        <remap from="/out/x" to="/out/x"/>
+        <remap from="/out/y" to="/out/y"/>
+        <remap from="/out/rotation" to="/out/rotation"/>
+        <remap from="/out/machine" to="/out/machine"/>
+
+        <remap from="/to_pico" to="/to_pico"/>
+        
+        <param name="smooth_gain" value="0.01"/>
+    </node>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+    <include file="$(find-pkg-share r1_launch)/launch/control/serial_controller.launch.xml"/>
+</launch>

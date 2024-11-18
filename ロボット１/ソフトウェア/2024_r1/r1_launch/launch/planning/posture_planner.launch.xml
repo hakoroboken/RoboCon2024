@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="posture_planner" exec="posture_planner_node" name="posture_planner_node">
+        <remap from="/current" to="/realsense/posture"/>
+        <remap from="/target" to="/controller/rotation"/>
+        
+        <remap from="/angular" to="/out/rotation"/>
+
+        <param name="threshold" value="0.1"/>
+        <param name="enable_reverse" value="false"/>
+    </node>
+</launch>

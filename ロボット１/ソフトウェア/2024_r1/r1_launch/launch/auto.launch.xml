@@ -1,0 +1,12 @@
+<launch>
+    <include file="$(find-pkg-share r1_launch)/launch/perception/wall_detector.launch.xml"/>
+
+    <include file="$(find-pkg-share r1_launch)/launch/sensing/realsense_launch.py"/>
+    <include file="$(find-pkg-share r1_launch)/launch/localization/imu_ekf_posture.launch.xml"/>
+    <!-- <include file="$(find-pkg-share r1_launch)/launch/localization/visual_odom_ros2.launch.xml"/> -->
+
+    <!-- <include file="$(find-pkg-share r1_launch)/launch/planning/field_sim.launch.xml"/> -->
+    <include file="$(find-pkg-share r1_launch)/launch/planning/pisture_planner_ros2.launch.xml"/>
+    <!-- <include file="$(find-pkg-share r1_launch)/launch/planning/waypoint_planner.launch.xml"/> -->
+    <include file="$(find-pkg-share r1_launch)/launch/control/serial_controller.launch.xml"/>
+</launch>

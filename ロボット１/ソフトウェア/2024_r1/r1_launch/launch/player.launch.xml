@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find-pkg-share r1_launch)/launch/control/dualsense_ros2.launch.xml"/>
+    <include file="$(find-pkg-share r1_launch)/launch/control/tobasudake.launch.xml"/>
+
+    <include file="$(find-pkg-share r1_launch)/launch/control/ombridge.launch.xml"/>
+    <!-- <include file="$(find-pkg-share r1_launch)/launch/control/kado.launch.xml"/> -->
+</launch>

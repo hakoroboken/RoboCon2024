@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="path_planner_ros2" exec="path_planner_ros2_node" name="path_planner_ros2_node">
+        <remap from="/robot/pose/target" to="/target"/>
+        <remap from="/robot/pose/current" to="/robot/pose/current"/>
+        <remap from="/path" to="/path"/>
+
+        <param name="frame_id" value="map"/>
+        <param name="step_size" value="0.1"/>
+    </node>
+</launch>

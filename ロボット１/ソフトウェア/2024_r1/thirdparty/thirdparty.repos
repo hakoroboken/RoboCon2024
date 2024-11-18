@@ -1,0 +1,20 @@
+repositories:
+    realsense-ros:
+        type: git
+        url: https://github.com/IntelRealSense/realsense-ros.git
+        version: ros2-master
+
+    micro-ROS-Agent:
+        type: git
+        url: https://github.com/micro-ROS/micro-ROS-Agent.git
+        version: foxy
+
+    micro_ros_msgs:
+        type: git
+        url: https://github.com/micro-ROS/micro_ros_msgs.git
+        version: foxy
+
+    drive_base:
+        type: git
+        url: https://github.com/micro-ROS/drive_base.git
+        version: master

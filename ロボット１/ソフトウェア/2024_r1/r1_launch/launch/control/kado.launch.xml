@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="ombridge_driver" exec="ombridge_driver_node" name="kado_node">
+
+        <remap from="/move1" to="/cad1"/>
+        <remap from="/move2" to="/cad2">
+        <remap from="/bridge1" to="/cad3"/>
+        <remap from="/bridge2" to="/cad4"/>
+
+        <param name="path" value="/dev/ttyUSB1"/>
+    </node>
+</launch>

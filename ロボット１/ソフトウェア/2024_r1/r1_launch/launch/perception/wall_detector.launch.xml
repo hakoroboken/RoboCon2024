@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="pcl_wall_detector" exec="pcl_wall_detector_node" name="wall_detector_node">
+        <remap from="/input_pointcloud" to="/camera/camera/depth/color/points"/>
+        <remap from="/line_marker" to="/detected"/>
+    </node>
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="visual_odom_ros2" exec="visual_odom_ros2_node" name="visual_odom_ros2_node">
+        <remap from="/image/rgb" to="/camera/camera/color/image_raw"/>
+        <remap from="/image/depth" to="/camera/camera/depth/image_rect_raw"/>
+        <remap from="/rpy" to="/imu/posture"/>
+        
+        <param name="frame_id" value="map"/>
+    </node>
+</launch>

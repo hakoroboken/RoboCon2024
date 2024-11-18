@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="field_sim" exec="field_sim_node" name="field_sim_node">
+        <remap from="/field" to="/field"/>
+    </node>
+</launch>
